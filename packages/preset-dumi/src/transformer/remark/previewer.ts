@@ -48,6 +48,8 @@ function getPreviewerId(yaml: any, mdAbsPath: string, codeAbsPath: string, compo
     id = [prefix, demoName].join('-');
   }
 
+  console.log(mdAbsPath, ids, id);
+
   // record id
   ids[id] = (ids[id] || 0) + 1;
 
